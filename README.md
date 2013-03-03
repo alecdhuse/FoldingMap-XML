@@ -6,7 +6,7 @@
   OutlineStyle is used to detail how the outlines of Polygons and LineStrings are drawn.
 
 ### Tag Descriptions:
-
+<pre>
     <borderCondition>
       The condition on when to use this OutlineStyle.  For Polygons the condition is the Class or Feature Type of the bordering Polygon sharing a vertex.  For LineStrings this tag is ignored.
 
@@ -27,9 +27,11 @@
 
     <width>
       A float value indicating the width to draw the outline.
+</pre>
 
 ####  Example:
 
+<code>
   <outlineStyle>
     <borderCondition>Any</borderCondition>
 	  <color>ffddbfa5</color>
@@ -37,3 +39,4 @@
 	  <strokeStyle>Solid</strokeStyle>
 	  <width>1</width>
   </outlineStyle>
+</code>
