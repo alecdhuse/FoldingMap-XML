@@ -1,14 +1,11 @@
-FoldingMap-XML
-==============
+# FoldingMap-XML
 
   This is the documentation for Folding Map's xml file format.  It includes style information.
 
-Outline Style
-==============
+## Outline Style
   OutlineStyle is used to detail how the outlines of Polygons and LineStrings are drawn.
 
-  Tag Descriptions:
-  =================
+### Tag Descriptions:
 
     <borderCondition>
       The condition on when to use this OutlineStyle.  For Polygons the condition is the Class or Feature Type of the bordering Polygon sharing a vertex.  For LineStrings this tag is ignored.
@@ -22,17 +19,16 @@ Outline Style
     <strokeStyle>
       The stroke style of the outline.  Current supported options are:
 
-        * Solid
-        * Solid-Dashed
-        * Dashed
-        * Dotted
-        * Dash-Dotted
+        - Solid
+        - Solid-Dashed
+        - Dashed
+        - Dotted
+        - Dash-Dotted
 
     <width>
       A float value indicating the width to draw the outline.
 
-  Example:
-  ========
+####  Example:
 
   <outlineStyle>
     <borderCondition>Any</borderCondition>
