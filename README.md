@@ -5,6 +5,9 @@
   
   FmXml includess style information as well as geospatial objects.
 
+## \<Data\>
+	The Data tag is used by Map Objects to store Key/Value Data.	
+
 ## \<GroundOverlay\>
 
 ## \<IconStyle\>
