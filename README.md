@@ -10,6 +10,9 @@
 
 ## \<GroundOverlay\>
 
+## \<Heatmap\>
+	Used to indicate a heatmap layer, these layers are dynamical generated.
+
 ## \<IconStyle\>
 
 ## \<LabelStyle\>
