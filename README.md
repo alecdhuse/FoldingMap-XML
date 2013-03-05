@@ -8,14 +8,42 @@
 ## \<Data\>
 	The Data tag is used by Map Objects to store Key/Value Data.	
 
+## \<Font\>
+
 ## \<GroundOverlay\>
 
 ## \<Heatmap\>
-	Used to indicate a heatmap layer, these layers are dynamical generated.
+	Used to indicate a heatmap layer, these layers are dynamically generated.
 
 ## \<IconStyle\>
-
+	Specifies how Points are drawn, usually by drawing an Icon, otherwise by a circle.
+	
 ## \<LabelStyle\>
+	Specified how Labels are to be drawn.
+	
+### Tag Descriptions:
+
+	<Color>
+		The main color of the label text.
+		
+	<OutlineColor>
+		The outline color of the label text.
+		
+	<Font>
+		Information on which font and size should be used for the label text.  
+		See the Font Tag for more Information.
+	
+### Example:
+
+	<labelStyle>
+		<color>ffffffff</color>
+		<outlineColor>ff3c444b</outlineColor>
+		<font>
+			<family>SansSerif</family>
+			<style>Plain</style>
+			<size>10</size>
+		</font>
+	</labelStyle>
 
 ## \<LatLonAltBox\>
 
