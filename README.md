@@ -4,9 +4,18 @@
   This format is based off of KML and OpenStreetMap.org with some furthur customization.
   
   FmXml includess style information as well as geospatial objects.
+  
+  General note about units: when using a unit within an FmXml file it should be in metric.
 
 ## \<Data\>
-	The Data tag is used by Map Objects to store Key/Value Data.	
+	The Data tag is used by Map Objects to store Key/Value Data.  Each object can only contain one of each key.
+	If an object had multiple entries for a single key only the last entry is used, the others are discarded.
+
+### Syntax:
+	<data>
+		<pair key="highway">residential</pair>
+		<pair key="speed">80</pair>
+	</data>
 
 ## \<Font\>
 
