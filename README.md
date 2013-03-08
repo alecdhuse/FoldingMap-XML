@@ -65,13 +65,27 @@
 ## \<Lod\>
 
 ## \<MultiGeometry\>
-	A containor for zero or more vector map objects.  Valid objects are Point, LineString, LinearRing, Polygon and 
+	A containor for zero or more vector map objects.  Valid objects are:  Point, LineString, LinearRing, Polygon and 
 	MultiGeometry.  
+	
+### Tag Descriptions:
+
+	<description>
+		The description for this object.
+		
+	<elements>
+		Contains the elements that make up this MultiGeometry.
+		
+	<name>
+		The name for this object.
+		
+	<ref>
+		The reference ID for this object.
 	
 ### Example:
 
-	<MultiGeometry id="id">
-		<Ref>2</Ref>
+	<multiGeometry id="id">
+		<ref>2</ref>
 		<name>Burnside Bridge</name>
 		<description>Burnside Bridge MultiGeometry</description>
 		<elements>
@@ -86,7 +100,7 @@
 				<coordinates>1328062041 1634664269 333451694 1328062042</coordinates>
 			</LineString>
 		</elements>
-	</MultiGeometry>
+	</multiGeometry>
 
 ## \<Node\>
 	Node are a single geospatial point.  A Node can be multidimensional, using at minimum, a Latitude and Longitude; 
