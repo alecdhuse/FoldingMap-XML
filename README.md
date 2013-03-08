@@ -72,7 +72,8 @@
 
 	<MultiGeometry id="id">
 		<Ref>2</Ref>
-		<<name>Burnside Bridge</name>
+		<name>Burnside Bridge</name>
+		<description>Burnside Bridge MultiGeometry</description>
 		<elements>
 			<LineString id="Road - City Primary">
 				<name>Burnside Bridge</name>
