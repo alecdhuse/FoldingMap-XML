@@ -170,4 +170,21 @@
 
 ## \<Region\>
 
+## \<ScreenOverlay\>
+
+## \<Style\>
+
+	Defines a style that can be applied to vector objects within a given map.  A style is referenced by an id.
+	The id is defined as an attribute of the style tag, see below.
+	
+### Syntax:
+
+	<Style id="ID">
+
+		<IconStyle>...</IconStyle>
+  		<LabelStyle>...</LabelStyle>
+  		<LineStyle>...</LineStyle>
+  		<PolyStyle>...</PolyStyle>
+	</Style>	
+	
 ## \<VectorLayer\>
