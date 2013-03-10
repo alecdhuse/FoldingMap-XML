@@ -56,6 +56,43 @@
 
 ## \<LatLonAltBox\>
 
+	A three dimentional bounding box.
+	
+### Tag Descriptions:
+
+	<north>
+		The north bound of this bounding box.
+		
+	<south>
+		The south bound of this bounding box.
+		
+	<east>
+		The east bound of this bounding box.
+	
+	<west>
+		The west bound of this bounding box.
+		
+	<minAltitude>
+		The lower altitude bounds of this bounding box.
+	
+	<maxAltitude>
+		The upper altitude bounds of this bounding box.
+	
+	<altitudeMode>
+		Possible values are clampToGround, relativeToGround, and absolute.
+		
+### Example:
+
+	<LatLonAltBox>
+		<north>5.156742572784424</north>
+		<south>5.222579479217529</south>
+		<east>10.593417167663574</east>
+		<west>10.464646339416504</west>
+		<minAltitude>0.0</minAltitude>
+		<maxAltitude>5000.0</maxAltitude>
+		<altitudeMode>absolute</altitudeMode>
+	</LatLonAltBox>
+
 ## \<LinearRing\>
 
 ## \<LineStyle\>
@@ -64,6 +101,36 @@
 
 ## \<Lod\>
 
+	Lod is an acronym for Level of Detail.  This tag describes the size of an area on the screen needed 
+	for that area to be displayed.  
+
+### Tag Descriptions:
+
+	<minLodPixels>
+		The minimum number pixels needed for this area to be displayed.  
+		A value of -1 indicates this field is to be ignored.
+		
+	<maxLodPixels>
+		The maximum number of pixels that can be displayed for this area.
+		A value of -1 indicates this field is to be ignored.
+		
+	<minFadeExtent>
+		Distance over which the map objects associated with this LOD fade, from fully opaque to 
+		fully transparent.
+	
+	<maxFadeExtent>
+		Distance over which the map objects associated with this LOD fade, from fully transparent to 
+		fully opaque.
+		
+### Example:
+
+	<Lod>
+		<minLodPixels>633.0</minLodPixels>
+		<maxLodPixels>100000.0</maxLodPixels>
+		<minFadeExtent>0.0</minFadeExtent>
+		<maxFadeExtent>0.0</maxFadeExtent>
+	</Lod>
+		
 ## \<MultiGeometry\>
 	A containor for zero or more vector map objects.  Valid objects are:  Point, LineString, LinearRing, Polygon and 
 	MultiGeometry.  
