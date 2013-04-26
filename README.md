@@ -254,4 +254,18 @@
   		<PolyStyle>...</PolyStyle>
 	</Style>	
 	
+## \<TileSource\>
+
+	Describes the soure for tiles used in a TileLayer.  The source can be a diectory structure, file, or a server address.
+	
+	The directory structure must be in the form: path/Zoom/X/Y.png  Where Zoom, X and Y are integers.
+	File must be a .MbTile file.
+	Server address must follow the Zoom/X/Y.png or Y.jpg format.
+	
+### Syntax:	
+	
+	<TileSource>
+		<href>...</href> 
+	</TileSource>
+	
 ## \<VectorLayer\>
