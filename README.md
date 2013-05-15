@@ -229,6 +229,10 @@
 	 	<width>1</width>
   	</outlineStyle>
 
+## \<PhotoPoint\>
+	Extends Point
+	A GeoTagged photo displayed as a point on a map.
+
 ## \<Point\>
 
 ## \<Polygon\>
