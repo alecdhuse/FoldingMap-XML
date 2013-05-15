@@ -230,13 +230,25 @@
   	</outlineStyle>
 
 ## \<PhotoPoint\>
-	Extends Point
-	A GeoTagged photo displayed as a point on a map.
+- Extends Point
+
+  A GeoTagged photo displayed as a point on a map.
 
 ## \<Point\>
 
+  A simple geographical object consisting of a single coordinate.
+	
+### Syntax:
+
+	<Point id="Bar">
+		<name>Yes and No</name>
+		<Ref>4066</Ref>
+		<coordinates>1234800640</coordinates>
+	</Point>
+	
 ## \<Polygon\>
 
+	
 ## \<PolyStyle\>
 
 ## \<Region\>
@@ -273,3 +285,12 @@
 	</TileSource>
 	
 ## \<VectorLayer\>
+
+### Syntax:
+
+	<VectorLayer>
+		<name>New Layer</name>
+		<objects>
+			...
+		</objects>
+	</VectorLayer>
