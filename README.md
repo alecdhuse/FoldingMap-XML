@@ -7,6 +7,16 @@
   
   General note about units: when using a unit within an FmXml file it should be in metric.
 
+## \<BubblePoint\>
+
+	A visualization object that can visualize two fields of data by changing its color and radius.
+	
+- Extends Point
+
+## \<ColorRamp\>
+
+	Used for visualizations that have an element which changes color.  The ColorRamp maps values to a color.
+
 ## \<Data\>
 	The Data tag is used by Map Objects to store Key/Value Data.  Each object can only contain one of each key.
 	If an object had multiple entries for a single key only the last entry is used, the others are discarded.
@@ -57,7 +67,9 @@
 ## \<LatLonAltBox\>
 
 	A three dimentional bounding box.
-	
+
+- Extends LatLonBox
+
 ### Tag Descriptions:
 
 	<north>
@@ -93,11 +105,42 @@
 		<altitudeMode>absolute</altitudeMode>
 	</LatLonAltBox>
 
+## \<LatLonBox\>
+
+	A two dimentional bounding box.
+
+### Tag Descriptions:
+
+	<north>
+		The north bound of this bounding box.
+		
+	<south>
+		The south bound of this bounding box.
+		
+	<east>
+		The east bound of this bounding box.
+	
+	<west>
+		The west bound of this bounding box.
+
+### Example:
+
+	<LatLonAltBox>
+		<north>5.156742572784424</north>
+		<south>5.222579479217529</south>
+		<east>10.593417167663574</east>
+		<west>10.464646339416504</west>
+	</LatLonAltBox>
+		
 ## \<LinearRing\>
 
-## \<LineStyle\>
+	A linear object that where the start point and end point connect creating a closed line.
+	
+- Extends LineString
 
 ## \<LineString\>
+
+## \<LineStyle\>
 
 ## \<Lod\>
 
@@ -169,6 +212,8 @@
 		</elements>
 	</multiGeometry>
 
+## \<NetworkLayer\>
+
 ## \<Node\>
 	Node are a single geospatial point.  A Node can be multidimensional, using at minimum, a Latitude and Longitude; 
 	but also may including altitude and a timestamp.  
@@ -230,9 +275,10 @@
   	</outlineStyle>
 
 ## \<PhotoPoint\>
-- Extends Point
 
   A GeoTagged photo displayed as a point on a map.
+
+- Extends Point
 
 ## \<Point\>
 
@@ -247,7 +293,6 @@
 	</Point>
 	
 ## \<Polygon\>
-
 	
 ## \<PolyStyle\>
 
