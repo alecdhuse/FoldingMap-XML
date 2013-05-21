@@ -47,6 +47,34 @@
 		<pair key="speed">80</pair>
 	</data>
 
+## \<Document\>
+
+	The parent tag for stiles and map objects.
+	
+### Tag Descriptions:
+
+	<name>
+		The map name.
+		
+	<description>
+		The map's description.
+		
+	<view>
+		The coordinate to focus the map when it is first loaded.
+		
+	<projection>
+		The map projection to be used when displaying this map.  
+		Currently only supports Mercator.
+		
+	<nodes>
+		The list of all nodes used in this map.
+		
+	<mapstyle>
+		The style used in this map.
+		
+	<layers>
+		One or more layers contained by this map.		
+
 ## \<Font\>
 
 ### Tag Descriptions:
