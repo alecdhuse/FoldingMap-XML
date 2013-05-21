@@ -214,6 +214,26 @@
 
 ## \<NetworkLayer\>
 
+	A layer with object sourced from a seperate file.  This file can be on the local machine or accessable from a URL.  
+	Currently supports CSV, FmXML, GeoJSON, GeoRss and KML file formats.
+
+- Extends VectorLayer
+
+### Tag Descriptions:
+
+	<name>
+		The network layer's name.
+		
+	<description>
+		This layer's description.
+		
+	<href>
+		The location of the source file for this network layer.  The source can be a file on the local computer 
+		or a URL.
+		
+	<refreshInterval>
+		How often the data from the source file is reloaded.  This is a float value in seconds.
+		
 ## \<Node\>
 	Node are a single geospatial point.  A Node can be multidimensional, using at minimum, a Latitude and Longitude; 
 	but also may including altitude and a timestamp.  
@@ -317,7 +337,8 @@
 	
 ## \<TileSource\>
 
-	Describes the soure for tiles used in a TileLayer.  The source can be a diectory structure, file, or a server address.
+	Describes the soure for tiles used in a TileLayer.  The source can be a diectory structure, file, or a server 
+	address.
 	
 	The directory structure must be in the form: path/Zoom/X/Y.png  Where Zoom, X and Y are integers.
 	File must be a .MbTile file.
