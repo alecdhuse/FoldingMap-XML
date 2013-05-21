@@ -209,6 +209,41 @@
 
 ## \<LineStyle\>
 
+	Describes how to style a LineString.
+	
+### Tag Descriptions:
+
+	<width>
+		The width of the line.
+		
+	<color>
+		The fill color of the line.
+		
+	<selectedFillColor>
+		The color to fill the line when selected.
+		
+	<outline>
+		An integer value 1 or 0 used decide if the line is outlined.
+		1 means the line is outlined.
+		0 means the line is not outlined.
+	
+	<outlineColor>
+		The color of the outine.
+	
+	<selectedOutlineColor>
+		The color to draw the outline when selected.
+
+### Example:
+
+	<LineStyle>
+		<width>2.5</width>
+		<color>ff45c3ff</color>
+		<selectedFillColor>803e3ef3</selectedFillColor>
+		<outline>1</outline>
+		<outlineColor>ff0f8ed9</outlineColor>
+		<selectedOutlineColor>ff0000ff</selectedOutlineColor>
+	</LineStyle>
+
 ## \<Lod\>
 
 	Lod is an acronym for Level of Detail.  This tag describes the size of an area on the screen needed 
