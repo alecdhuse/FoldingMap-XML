@@ -17,7 +17,27 @@
 
 	Used for visualizations that have an element which changes color.  The ColorRamp maps values to a color.
 
+### Tag Descriptions:
+
+	<default>
+		The default color returned by the ramp if queried for a nonexistent key.  
+		
+	<pair>
+		Holds that hex color value for a given key.  The key can be numeric or a string.
+
+### Example:
+
+	<ColorRamp>
+		<default>ff444444</default>		
+		<pair key="2">b400fe5f</pair>
+		<pair key="3">b400fcd7</pair>
+		<pair key="4">b400daff</pair>
+		<pair key="5">b40062ff</pair>
+		<pair key="6">b40001ff</pair>		
+	</ColorRamp>
+
 ## \<Data\>
+
 	The Data tag is used by Map Objects to store Key/Value Data.  Each object can only contain one of each key.
 	If an object had multiple entries for a single key only the last entry is used, the others are discarded.
 
@@ -29,15 +49,34 @@
 
 ## \<Font\>
 
-## \<GroundOverlay\>
+### Tag Descriptions:
+
+	<face>
+		Optional tag to specify the name of the font to be used.
+		
+	<family>
+		The font family, used to create a font if the face tag is missing or the font cannot be found.
+		
+	<style>
+		The font style, possible values are: bold, italic and plain
+		
+	<size>
+		The size of the font to be used.		
 
 ## \<Heatmap\>
+
 	Used to indicate a heatmap layer, these layers are dynamically generated.
 
 ## \<IconStyle\>
+
 	Specifies how Points are drawn, usually by drawing an Icon, otherwise by a circle.
 	
+## \<ImageOverlay\>
+
+	Tag for an image overlayed over a map.
+	
 ## \<LabelStyle\>
+
 	Specified how Labels are to be drawn.
 	
 ### Tag Descriptions:
@@ -125,12 +164,12 @@
 
 ### Example:
 
-	<LatLonAltBox>
+	<LatLonBox>
 		<north>5.156742572784424</north>
 		<south>5.222579479217529</south>
 		<east>10.593417167663574</east>
 		<west>10.464646339416504</west>
-	</LatLonAltBox>
+	</LatLonBox>
 		
 ## \<LinearRing\>
 
@@ -334,6 +373,10 @@
   		<LineStyle>...</LineStyle>
   		<PolyStyle>...</PolyStyle>
 	</Style>	
+	
+## \<TileLayer\>
+
+	A raster layer for display map tiles.
 	
 ## \<TileSource\>
 
