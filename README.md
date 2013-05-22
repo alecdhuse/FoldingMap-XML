@@ -418,6 +418,8 @@
 	
 ## \<PolyStyle\>
 
+	Defines a style for a polygon.
+	
 ## \<Region\>
 
 ## \<ScreenOverlay\>
@@ -462,6 +464,7 @@
 
 	<VectorLayer>
 		<name>New Layer</name>
+		<description>Layer Description<description>
 		<objects>
 			...
 		</objects>
