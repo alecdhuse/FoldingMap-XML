@@ -6,6 +6,7 @@
 		<view>-122.675156,45.52566,16.942585</view>
 		<projection>Mercator</projection>
 		<nodes>
+			<node id="143">-122.67275,45.522644,0,2013-03-17T16:44:12Z</node>
 			<node id="32656162">-122.67277,45.515152,0,2012-09-06T22:41:24Z</node>
 			<node id="32656336">-122.669945,45.520393,0,2012-09-06T22:41:24Z</node>
 			<node id="32656340">-122.66922,45.523304,0,2012-09-06T22:41:24Z</node>
@@ -148,6 +149,7 @@
 			<node id="1711981595">-122.67322,45.51391,0,2012-09-06T22:41:32Z</node>
 			<node id="1711981599">-122.673706,45.514038,0,2012-09-06T22:41:32Z</node>
 			<node id="1832493063">-122.67344,45.52432,0,2012-09-06T22:41:33Z</node>
+			<node id="1832493064">-122.66819,45.523003,0,2013-05-23T22:06:32Z</node>
 		</nodes>
 		<mapstyle>
 			<Style>
@@ -236,6 +238,19 @@
 					</font>
 				</labelStyle>
 			</Style>
+			<Style id="Photo">
+				<IconStyle>
+					<color>80444444</color>
+					<colorMode>normal</colorMode>
+					<outline>1</outline>
+					<outlineColor>80323232</outlineColor>
+					<scale>0.0</scale>
+					<heading>0.0</heading>
+					<Icon>
+						<href>web_photo.png</href>
+					</Icon>
+				</IconStyle>
+			</Style>            
 			<Style id="(Unspecified Point)">
 				<IconStyle>
 					<color>80444444</color>
@@ -354,7 +369,6 @@
 					<color>ffafdfc9</color>
 					<colorMode>normal</colorMode>
 					<fill>1</fill>
-					<outline>0</outline>
 				</PolyStyle>
 			</Style>
 			<Style id="Building">
@@ -363,8 +377,6 @@
 					<color>ffe1e6e7</color>
 					<colorMode>normal</colorMode>
 					<fill>1</fill>
-					<outline>1</outline>
-					<gx:outlineColor>ffccd0d4</gx:outlineColor>
 				</PolyStyle>
 			</Style>
 			<Style id="(Unspecified Polygon)">
@@ -373,8 +385,6 @@
 					<color>ffb2bebc</color>
 					<colorMode>normal</colorMode>
 					<fill>1</fill>
-					<outline>1</outline>
-					<gx:outlineColor>b4444444</gx:outlineColor>
 				</PolyStyle>
 			</Style>
 			<Style id="River">
@@ -383,7 +393,6 @@
 					<color>ffddbfa5</color>
 					<colorMode>normal</colorMode>
 					<fill>1</fill>
-					<outline>0</outline>
 				</PolyStyle>
 			</Style>
 			<Style id="Grass Field">
@@ -392,7 +401,6 @@
 					<color>ffa6d9be</color>
 					<colorMode>normal</colorMode>
 					<fill>1</fill>
-					<outline>0</outline>
 				</PolyStyle>
 			</Style>
 		</mapstyle>
@@ -405,7 +413,7 @@
 						<Ref>46</Ref>
 						<outerBoundaryIs>
 							<LinearRing>
-								<coordinates>1666247493 1666247587 1666626535 1666626539 1666247594 1666247594 1666247721 1666247843 339442633 32656345 1666247711 1666247706 1666247671 830788779 1666247657 286766352 1666247642 1666247640 32656340 1323150102 1323150049 1323150110 1581678767 1581678763 1581678761 1581678733 1581678728 1581678727 1581678726 1581678718 1581678715 1581678717 1666247510 286766364</coordinates>
+								<coordinates>1666247493 1666247587 1666626535 1666626539 1666247594 1666247721 1666247843 339442633 32656345 1666247711 1666247706 1666247671 830788779 1666247657 286766352 1666247642 1666247640 32656340 1323150102 1323150049 1323150110 1581678767 1581678763 1581678761 1581678733 1581678728 1581678727 1581678726 1581678718 1581678715 1581678717 1666247510 286766364</coordinates>
 							</LinearRing>
 						</outerBoundaryIs>
 					</Polygon>
@@ -445,6 +453,7 @@
 					</Point>
 					<MultiGeometry id="">
 						<Ref>0</Ref>
+						<Name></Name>
 						<elements>
 							<LineString id="Road - City Primary">
 								<name>W Burnside Bridge St</name>
@@ -460,6 +469,7 @@
 					</MultiGeometry>
 					<MultiGeometry id="">
 						<Ref>1</Ref>
+						<Name></Name>
 						<elements>
 							<LineString id="Road - City Primary">
 								<name>Burnside</name>
@@ -473,8 +483,10 @@
 							</LineString>
 						</elements>
 					</MultiGeometry>
-					<MultiGeometry id="">
+					<MultiGeometry id="Burnside Bridge">
 						<Ref>2</Ref>
+						<Name>Burnside Bridge</Name>
+						<description><![CDATA[Burnside Bridge MultiGeometry]]></description>
 						<elements>
 							<LineString id="Road - City Primary">
 								<name>Burnside Bridge</name>
@@ -497,6 +509,19 @@
 							</LinearRing>
 						</outerBoundaryIs>
 					</Polygon>
+					<Point id="Labeled Point">
+						<name>Portland</name>
+						<Ref>3</Ref>
+						<coordinates>143</coordinates>
+					</Point>
+					<PhotoPoint id="Photo">
+						<name>Portland Oregon - White Stag sign</name>
+						<Ref>3</Ref>
+						<Icon>
+							<href>http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Portland_Oregon_-_White_Stag_sign.jpg/666px-Portland_Oregon_-_White_Stag_sign.jpg</href>
+						</Icon>
+						<coordinates>1832493064</coordinates>
+					</PhotoPoint>                    
 				</objects>
 			</VectorLayer>
 		</layers>
