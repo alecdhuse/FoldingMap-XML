@@ -428,7 +428,7 @@
 		<selectedColor>ff79a287</color>
 		<colorMode>normal</colorMode>
 		<fill>1</fill>
-		<outline>
+		<outlines>
 			<outlineStyle>
 				<borderCondition>Any</borderCondition>
 				<color>b4444444</color>
@@ -436,7 +436,7 @@
 				<strokeStyle>Solid</strokeStyle>
 				<width>1.0</width>			
 			</outlineStyle>
-		</outline>
+		</outlines>
 	</PolyStyle>
 	
 ## \<Region\>
