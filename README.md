@@ -420,6 +420,25 @@
 
 	Defines a style for a polygon.
 	
+### Example:
+
+	<PolyStyle>
+		<featureType>Land</featureType>
+		<color>ff79a287</color>
+		<selectedColor>ff79a287</color>
+		<colorMode>normal</colorMode>
+		<fill>1</fill>
+		<outline>
+			<outlineStyle>
+				<borderCondition>Any</borderCondition>
+				<color>b4444444</color>
+				<selectedColor>ff0000ff</selectedColor>
+				<strokeStyle>Solid</strokeStyle>
+				<width>1.0</width>			
+			</outlineStyle>
+		</outline>
+	</PolyStyle>
+	
 ## \<Region\>
 
 ## \<ScreenOverlay\>
