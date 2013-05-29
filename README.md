@@ -416,6 +416,36 @@
 	
 ## \<Polygon\>
 	
+	Polygons are defined by one outer-boundry and zero or more inner-boundaries.  The order of the coordinates does not matter as it does in other formats such as KML.
+	
+### Tag Descriptions:
+
+	<name>
+		The polygon's name.
+	
+	<description>
+		The polygon's description, this tag may be ommitted.
+		
+	<ref>
+		The reference ID as interger.  This is used by visualization elements to reference which object is being user to generate a visualization.
+		
+	<outerBoundary>
+		Defines the outer boundary of the polygon.  There can only be one outer boundary.
+		
+	<innerBoundary>
+		Defines an inner-boundary for the polygon. There can be zero or more of there tags.
+		
+### Example:
+
+	<Polygon id="River">
+		<name>Willamette River</name>
+		<description>Polygon Description<description>
+		<Ref>34</Ref>
+		<outerBoundary>
+			<coordinates>1711981595 1323150051 32656162 1323150123 1666247227 1666247228 1323150096 1323150126 1666247263 1666247271 1323150066 1666247294 1666247365 32656336 1323150092 1323150122 1666247497 286766364 1666247493 1666247487 1666247283 1666247225 1666247192 1666247189</coordinates>
+		</outerBoundary>
+	</Polygon>
+	
 ## \<PolyStyle\>
 
 	Defines a style for a polygon.
