@@ -49,7 +49,7 @@
 
 ## \<Document\>
 
-	The parent tag for stiles and map objects.
+	The parent tag for styles and map objects.
 	
 ### Tag Descriptions:
 
@@ -401,6 +401,31 @@
   A GeoTagged photo displayed as a point on a map.
 
 - Extends Point
+
+### Tag Descriptions:
+
+	<name>
+		Object's name.
+	
+	<ref>
+		Object's reference number.
+		
+	<icon>
+		The photo of this PhotoPoint.
+		
+	<coordinates>
+		The coordinate id, or coordinate values.
+
+### Example:
+
+	<PhotoPoint id="Photo">
+		<name>Portland Oregon - White Stag sign</name>
+		<Ref>3</Ref>
+		<icon>
+			<href>White_Stag_sign.jpg</href>
+		</icon>
+		<coordinates>1832493064</coordinates>
+	</PhotoPoint>
 
 ## \<Point\>
 
