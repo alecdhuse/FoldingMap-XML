@@ -5,7 +5,8 @@
   
   FmXml includess style information as well as geospatial objects.
   
-  General note about units: when using a unit within an FmXml file it should be in metric.
+  General note about units: when using a unit within an FmXml file it should be in metric.  
+  Time stamps are in the format: year-mm-ddThh:mm:ssZ format.  Example: 2012-09-06T22:41:24Z
 
 ## \<BubblePoint\>
 
@@ -36,10 +37,23 @@
 		<pair key="6">b40001ff</pair>		
 	</ColorRamp>
 
+## \<coordinates\>
+
+	A tag used by various objects to specify what coordinates that object uses.  The tag content can contain a variaty of formats which cna be intermingled.
+	
+	Possible formats:
+		- Node IDs seperated by spaces
+		- Two dimentional coordinates consisting of longitude,latitude pairs, with each pair seperated by spaces.
+		- Three dimentional coordinates consisting of longitude,latitude,altitude pairs, with each pair seperated by spaces.
+		- Four dimentional coordinates consisting of longitude,latitude,altitude,timestamp pairs, with each pair seperated by spaces.
+	
+### Example:
+
+	<coordinates>12 -3.025556,58.64749 -3.03,58.60027,3 -122.66198,45.52524,4,2012-09-06T22:41:24Z</coordinates>
+	
 ## \<Data\>
 
-	The Data tag is used by Map Objects to store Key/Value Data.  Each object can only contain one of each key.
-	If an object had multiple entries for a single key only the last entry is used, the others are discarded.
+	The Data tag is used by Map Objects to store Key/Value Data.  Each object can only contain one of each key.  If an object had multiple entries for a single key only the last entry is used, the others are discarded.
 
 ### Syntax:
 	<data>
@@ -206,6 +220,27 @@
 - Extends LineString
 
 ## \<LineString\>
+
+	A linear non-closed object that consists of a string of coordinates and rendered as a Line.
+
+### Tag Descriptions:
+
+	<name>
+		The name of this LineString.
+		
+	<ref>	
+		The reference ID for this LineString as a long integer.
+		
+	<coordinates>
+		The list of Coordinates used by this LineString.
+
+### Example:
+
+	<LineString id="Road - City Primary">
+		<name>Northwest 3rd Avenue</name>
+		<Ref>7974</Ref>
+		<coordinates>40508548 1832493063 1392884743 40644438 1392884516 1376370008 567256143</coordinates>
+	</LineString>
 
 ## \<LineStyle\>
 
