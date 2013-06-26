@@ -247,15 +247,9 @@
 	Describes how to style a LineString.
 	
 ### Tag Descriptions:
-
-	<width>
-		The width of the line.
 		
 	<color>
-		The fill color of the line.
-		
-	<selectedFillColor>
-		The color to fill the line when selected.
+		The fill color of the line.		
 		
 	<outline>
 		An integer value 1 or 0 used decide if the line is outlined.
@@ -265,8 +259,17 @@
 	<outlineColor>
 		The color of the outine.
 	
+	<scaleWidth>
+		Specifies if the LineString should be scaled when zooming.  The default is true.
+		
+	<selectedFillColor>
+		The color to fill the line when selected.	
+	
 	<selectedOutlineColor>
 		The color to draw the outline when selected.
+		
+	<width>
+		The width of the line.		
 
 ### Example:
 
