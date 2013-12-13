@@ -37,7 +37,7 @@
 		<pair key="6">b40001ff</pair>		
 	</ColorRamp>
 
-## \<coordinates\>
+## \<Coordinates\>
 
 	A tag used by various objects to specify what coordinates that object uses.  The tag content can contain a variaty of formats which cna be intermingled.
 	
@@ -355,7 +355,7 @@
 ## \<NetworkLayer\>
 
 	A layer with object sourced from a seperate file.  This file can be on the local machine or accessable from a URL.  
-	Currently supports CSV, FmXML, GeoJSON, GeoRss and KML file formats.
+	Currently supports CSV, FmXML, GeoJSON, GeoRss, KML and KMZ file formats.
 
 - Extends VectorLayer
 
@@ -366,6 +366,9 @@
 		
 	<description>
 		This layer's description.
+		
+	<visibility>
+		Visibility options for this layer, see the <visibility> tag description.
 		
 	<href>
 		The location of the source file for this network layer.  The source can be a file on the local computer 
@@ -581,3 +584,13 @@
 			...
 		</objects>
 	</VectorLayer>
+
+## \<Visibility\>
+
+### Tag Descriptions:
+
+	<maxTileZoom>
+		The maximum tile layer zoom level that this layer will be visiable at.
+		
+	<minTileZoom>
+		The minimum tile layer zoom level that this layer will be visible at.
